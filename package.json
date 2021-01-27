@@ -1,0 +1,16 @@
+
+  {
+    "name": "alchemyst",
+    "version": "1.0.0",
+    "scripts": {
+      "build": "npm run setup:client && npm run setup:server && npm run build:client",
+      "setup:client": "cd alchemyst.client && npm i",
+      "setup:server": "cd alchemyst.server && npm i",
+      "build:client": "npm run --prefix alchemyst.client build",
+      "start": "node alchemyst.server/index.js"
+    },
+    "engines": {
+      "node": "^14.15.4"
+    }
+  }
+  
